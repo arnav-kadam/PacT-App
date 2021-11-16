@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register"
+    android:orientation="vertical"
+    android:background="@drawable/register_background">
+
+    <ImageView
+        android:id="@+id/schoolImage"
+        android:layout_width="162dp"
+        android:layout_height="95dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/third_logo" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="490dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="20dp"
+        app:cardBackgroundColor="#BBE8F4"
+        app:cardCornerRadius="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/custom_cardview_2">
+
+            <TextView
+                android:id="@+id/registerTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:textColor="#221D1D"
+                android:textStyle="bold"
+                android:text="Create your account!"
+                android:fontFamily="@font/amaranth"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/emailTextView"
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:fontFamily="@font/amaranth"
+                android:textColor="#221D1D"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="30dp"
+                android:text="Email"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/emailEditText"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textSize="15sp"
+                android:paddingLeft="10dp"
+                android:paddingRight="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="27dp"
+                android:layout_marginRight="30dp"
+                android:ems="10"
+                android:background="@drawable/cool_login_edit_texts"
+                android:fontFamily="@font/amaranth"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/idTextView"
+                android:layout_width="260dp"
+                android:fontFamily="@font/amaranth"
+                android:layout_height="wrap_content"
+                android:textColor="#221D1D"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="30dp"
+                android:text="ID/Username"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/idEditText"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="27dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:paddingRight="20dp"
+                android:paddingLeft="10dp"
+                android:ems="10"
+                android:background="@drawable/cool_login_edit_texts"
+                android:fontFamily="@font/amaranth"
+                android:inputType="textPersonName"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/passwordTextView"
+                android:fontFamily="@font/amaranth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#221D1D"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="30dp"
+                android:text="Password"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/passwordEditText"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="27dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:paddingRight="20dp"
+                android:paddingLeft="10dp"
+                android:ems="10"
+                android:background="@drawable/cool_login_edit_texts"
+                android:fontFamily="@font/amaranth"
+                android:inputType="textPassword"
+                android:textSize="15sp" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:addStatesFromChildren="true"
+                android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/studentRadioButton"
+                        android:layout_width="150dp"
+                        android:layout_height="30dp"
+                        android:fontFamily="@font/amaranth"
+                        android:layout_marginLeft="27dp"
+                        android:text="Student"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/adminRadioButton"
+                        android:layout_width="150dp"
+                        android:layout_height="30dp"
+                        android:fontFamily="@font/amaranth"
+                        android:layout_marginLeft="27dp"
+                        android:text="Admin"
+                        android:textStyle="bold" />
+
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/registerButton"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="18dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/rounded_buttons"
+                android:fontFamily="@font/amaranth"
+                android:text="Register"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="25dp"
+                android:text="Already registered? Login here!"
+                android:textColor="#3888FF"
+                android:textSize="18sp"
+                android:fontFamily="@font/amaranth"
+                android:clickable="true"
+                android:textStyle="bold"
+                android:id="@+id/takeToLoginTextView"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:visibility="invisible" />
+
+</LinearLayout>

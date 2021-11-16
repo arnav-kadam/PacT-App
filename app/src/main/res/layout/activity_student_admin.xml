@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/register_background"
+    android:layout_gravity="center_horizontal"
+    tools:context=".StudentAdmin">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="370dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        app:cardCornerRadius="20dp"
+        android:layout_height="150dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/custom_cardview_1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Change or add a student:"
+                android:textSize="25sp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/amaranth"
+                android:layout_gravity="center_horizontal"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Enter student id:"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="@font/amaranth"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="20sp"/>
+
+                <EditText
+                    android:id="@+id/idEditText"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_gravity="center_horizontal"
+                    android:ems="10"
+                    android:textAlignment="center"
+                    android:background="@drawable/round_edit_text"
+                    android:fontFamily="@font/amaranth"
+                    android:inputType="textPersonName" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/findStudentButton"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_width="170dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/rounded_buttons"
+                    android:fontFamily="@font/amaranth"
+                    android:text="Find student"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/addStudentButton"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/rounded_buttons"
+                    android:fontFamily="@font/amaranth"
+                    android:text="Add new student"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="370dp"
+        android:layout_marginTop="25dp"
+        android:layout_gravity="center_horizontal"
+        app:cardCornerRadius="20dp"
+        android:visibility="invisible"
+        android:layout_height="440dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/custom_cardview_1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/amaranth"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="10dp"
+                    android:text="Name:"/>
+
+                <EditText
+                    android:id="@+id/nameEditText"
+                    android:layout_width="260dp"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_gravity="center_horizontal"
+                    android:ems="10"
+                    android:textAlignment="center"
+                    android:text="Arnav Kadam"
+                    android:background="@drawable/round_edit_text"
+                    android:fontFamily="@font/amaranth"
+                    android:inputType="textPersonName" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/amaranth"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="10dp"
+                    android:text="Grade:"/>
+
+                <EditText
+                    android:id="@+id/gradeEditText"
+                    android:layout_width="260dp"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_gravity="center_horizontal"
+                    android:ems="10"
+                    android:textAlignment="center"
+                    android:text="11"
+                    android:background="@drawable/round_edit_text"
+                    android:fontFamily="@font/amaranth"
+                    android:inputType="textPersonName" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:fontFamily="@font/amaranth"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="5dp"
+                        android:text="Bus number:"/>
+
+                    <EditText
+                        android:id="@+id/busNumberEditText"
+                        android:layout_width="50dp"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_gravity="center_horizontal"
+                        android:ems="10"
+                        android:text="3"
+                        android:textAlignment="center"
+                        android:background="@drawable/round_edit_text"
+                        android:fontFamily="@font/amaranth"
+                        android:inputType="textPersonName" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:fontFamily="@font/amaranth"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="5dp"
+                        android:text="Seat number:"/>
+
+                    <EditText
+                        android:id="@+id/seatNumberEditText"
+                        android:layout_width="50dp"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_gravity="center_horizontal"
+                        android:ems="10"
+                        android:text="3"
+                        android:textAlignment="center"
+                        android:background="@drawable/round_edit_text"
+                        android:fontFamily="@font/amaranth"
+                        android:inputType="textPersonName" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Class room numbers (#):"
+                android:fontFamily="@font/amaranth"
+                android:layout_gravity="center_horizontal"
+                android:textSize="20sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:layout_gravity="center_vertical"
+                    android:fontFamily="@font/amaranth"
+                    android:layout_marginRight="5dp"
+                    android:text="#1:"/>
+
+                <EditText
+                    android:id="@+id/class1"
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_horizontal"
+                    android:ems="10"
+                    android:layout_marginRight="5dp"
+                    android:text="101"
+                    android:textAlignment="center"
+                    android:background="@drawable/round_edit_text"
+                    android:fontFamily="@font/amaranth"
+                    android:inputType="textPersonName" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:layout_gravity="center_vertical"
+                    android:fontFamily="@font/amaranth"
+                    android:layout_marginRight="5dp"
+                    android:text="#2:"/>
+
+                <EditText
+                    android:id="@+id/class2"
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_horizontal"
+                    android:ems="10"
+                    android:textAlignment="center"
+                    android:text="102"
+                    android:background="@drawable/round_edit_text"
+                    android:fontFamily="@font/amaranth"
+                    android:inputType="textPersonName" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:layout_gravity="center_vertical"
+                    android:fontFamily="@font/amaranth"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:text="#3:"/>
+
+                <EditText
+                    android:id="@+id/class3"
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_horizontal"
+                    android:ems="10"
+                    android:textAlignment="center"
+                    android:text="103"
+                    android:background="@drawable/round_edit_text"
+                    android:fontFamily="@font/amaranth"
+                    android:inputType="textPersonName" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:layout_gravity="center_vertical"
+                    android:fontFamily="@font/amaranth"
+                    android:layout_marginRight="5dp"
+                    android:text="#4:"/>
+
+                <EditText
+                    android:id="@+id/class4"
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_horizontal"
+                    android:ems="10"
+                    android:textAlignment="center"
+                    android:text="104"
+                    android:background="@drawable/round_edit_text"
+                    android:fontFamily="@font/amaranth"
+                    android:inputType="textPersonName" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:layout_gravity="center_vertical"
+                    android:fontFamily="@font/amaranth"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:text="#5:"/>
+
+                <EditText
+                    android:id="@+id/class5"
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_horizontal"
+                    android:ems="10"
+                    android:textAlignment="center"
+                    android:text="105"
+                    android:background="@drawable/round_edit_text"
+                    android:fontFamily="@font/amaranth"
+                    android:inputType="textPersonName" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:layout_gravity="center_vertical"
+                    android:fontFamily="@font/amaranth"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:text="#6:"/>
+
+                <EditText
+                    android:id="@+id/class6"
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_horizontal"
+                    android:ems="10"
+                    android:textAlignment="center"
+                    android:text="106"
+                    android:background="@drawable/round_edit_text"
+                    android:fontFamily="@font/amaranth"
+                    android:inputType="textPersonName" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:layout_gravity="center_vertical"
+                    android:fontFamily="@font/amaranth"
+                    android:layout_marginRight="5dp"
+                    android:text="#7:"/>
+
+                <EditText
+                    android:id="@+id/class7"
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_horizontal"
+                    android:ems="10"
+                    android:textAlignment="center"
+                    android:text="107"
+                    android:background="@drawable/round_edit_text"
+                    android:fontFamily="@font/amaranth"
+                    android:inputType="textPersonName" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:layout_gravity="center_vertical"
+                    android:fontFamily="@font/amaranth"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="#8:"/>
+
+                <EditText
+                    android:id="@+id/class8"
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_horizontal"
+                    android:ems="10"
+                    android:textAlignment="center"
+                    android:text="108"
+                    android:background="@drawable/round_edit_text"
+                    android:fontFamily="@font/amaranth"
+                    android:inputType="textPersonName" />
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/updateBusInfo"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/rounded_buttons"
+                android:fontFamily="@font/amaranth"
+                android:text="Update student"
+                android:textSize="18sp" />
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="45dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:id="@+id/profileImageView"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/profile" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="110dp"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/homeImageView"
+            android:src="@drawable/home" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="110dp"
+            android:id="@+id/logoutImageView"
+            android:src="@drawable/logout" />
+
+    </LinearLayout>
+
+</LinearLayout>

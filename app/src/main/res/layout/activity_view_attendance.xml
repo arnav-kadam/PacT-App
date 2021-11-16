@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/register_background"
+    android:orientation="vertical"
+    tools:context=".StudentMarkAttendance">
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="20dp"
+        android:layout_width="370dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center_horizontal"
+        app:cardCornerRadius="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/custom_cardview_1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="10dp"
+                android:text="View your attendance!"
+                android:fontFamily="@font/amaranth"
+                android:textSize="30sp"
+                android:layout_gravity="center_horizontal"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Choose a date:"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/amaranth"
+                android:layout_gravity="center_horizontal"
+                android:textSize="30sp" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="400dp"
+        android:layout_height="380dp"
+        android:layout_gravity="center_horizontal"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="370dp"
+        android:layout_height="140dp"
+        android:layout_gravity="center_horizontal"
+        app:cardCornerRadius="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:background="@drawable/custom_cardview_1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Present at school?"
+                    android:fontFamily="@font/amaranth"
+                    android:layout_marginRight="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/schoolTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:fontFamily="@font/amaranth"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="30sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Present on the bus?"
+                    android:fontFamily="@font/amaranth"
+                    android:layout_marginRight="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/busTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:fontFamily="@font/amaranth"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="30sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:id="@+id/profileImageView"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="22dp"
+            android:src="@drawable/profile" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="120dp"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/homeImageView"
+            android:src="@drawable/home" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="115dp"
+            android:id="@+id/logoutImageView"
+            android:src="@drawable/logout" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

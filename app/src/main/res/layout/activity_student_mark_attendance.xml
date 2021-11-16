@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/register_background"
+    android:orientation="vertical"
+    tools:context=".StudentMarkAttendance">
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="20dp"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        app:cardCornerRadius="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/custom_cardview_1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Mark your attendance!"
+                android:fontFamily="@font/amaranth"
+                android:textSize="30sp"
+                android:layout_gravity="center_horizontal"/>
+
+            <TextView
+                android:id="@+id/dateTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/amaranth"
+                android:text=""
+                android:textSize="25sp"
+                android:layout_gravity="center_horizontal"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="370dp"
+        android:layout_height="370dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        app:cardCornerRadius="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/custom_cardview_1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Are you taking the bus today?"
+                android:layout_gravity="center_horizontal"
+                android:textSize="25sp"
+                android:fontFamily="@font/amaranth"/>
+
+            <RadioGroup
+                android:id="@+id/busRadioButton"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="25dp"
+                android:addStatesFromChildren="true"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:layout_width="150dp"
+                    android:layout_height="30dp"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/amaranth"
+                    android:layout_marginLeft="27dp"
+                    android:text="Yes" />
+
+                <RadioButton
+                    android:layout_width="150dp"
+                    android:layout_height="30dp"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/amaranth"
+                    android:layout_marginLeft="27dp"
+                    android:text="No" />
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Are you going to school today?"
+                android:layout_gravity="center_horizontal"
+                android:textSize="25sp"
+                android:fontFamily="@font/amaranth"/>
+
+            <RadioGroup
+                android:id="@+id/schoolRadioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="28dp"
+                android:addStatesFromChildren="true"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:layout_width="150dp"
+                    android:layout_height="30dp"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/amaranth"
+                    android:layout_marginLeft="27dp"
+                    android:text="Yes" />
+
+                <RadioButton
+                    android:layout_width="150dp"
+                    android:layout_height="30dp"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/amaranth"
+                    android:layout_marginLeft="27dp"
+                    android:text="No"/>
+
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/submitButton"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/rounded_buttons"
+                android:layout_marginTop="28dp"
+                android:fontFamily="@font/amaranth"
+                android:text="Submit attendance"
+                android:textSize="18sp" />
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="130dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:id="@+id/profileImageView"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="22dp"
+            android:src="@drawable/profile" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="120dp"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/homeImageView"
+            android:src="@drawable/home" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="115dp"
+            android:id="@+id/logoutImageView"
+            android:src="@drawable/logout" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "48523626043",
+    "firebase_url": "https://sct-app-c2cb1.firebaseio.com",
+    "project_id": "sct-app-c2cb1",
+    "storage_bucket": "sct-app-c2cb1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:48523626043:android:92183beccbb5eb9c75be1e",
+        "android_client_info": {
+          "package_name": "com.example.sctapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "48523626043-i6dapt4t1pu2o57equ4u3g0v6clqoehc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.sctapp",
+            "certificate_hash": "92c2715a7cef84f2ca9a3d3dc672195753d2ad7b"
+          }
+        },
+        {
+          "client_id": "48523626043-0ki8bktuiuicd3h1e2shlvsehulr06kd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDICgimG4afRLzYzgJ9qDb5EPBPnmVl4K8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "48523626043-0ki8bktuiuicd3h1e2shlvsehulr06kd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
